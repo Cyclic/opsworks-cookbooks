@@ -30,7 +30,7 @@ define :opsworks_nodejs do
     variables(
       :deploy => deploy,
       :application_name => application,
-      :monitored_script => "#{deploy[:deploy_to]}/current/server.js"
+      :monitored_script => "#{deploy[:deploy_to]}/current/server/app.js"
     )
     notifies :restart, "service[monit]", :immediately
   end
