@@ -1,0 +1,3 @@
+[submodule "opworks_python"]
+	path = opworks_python
+	url = https://github.com/poise/python
